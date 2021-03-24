@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Registration Application</title>
+    <link rel="stylesheet" href="content/font-awesome.min.css" />
+    <link rel="stylesheet" href="content/bootstrap.min.css" />
+    <link rel="stylesheet" href="content/style.css" />
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<h2 style="text-align: center; color: black; font-variant: small-caps;padding-left:300px;">Welcome to Employee Registration</h2>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<section class="employee-aria">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="employeeAdd-box">
+						<h2 id="headStatus">Add Employee</h2>
+						<div class="col-md-8">
+							<div class="form-group">
+								<ul class="proField-list">
+									<li><label>Emp Name:</label></li>
+									<li><input type="text" id="stName" name="stName" class="form-control employee-field" placeholder="Name" required="required" /></li>
+								</ul>
+							</div>
+							<div class="form-group">
+								<ul class="proField-list">
+									<li><label>Id:</label></li>
+									<li><input type="text" id="prPrice" name="prPrice" class="form-control employee-field" placeholder="eg. 1238782" required="required" /></li>
+								</ul>
+							</div>
+							<div class="form-group">
+								<ul class="proField-list">
+									<li><label>Contact No:</label></li>
+									<li><input type="text" id="prWeight" name="prWeight" class="form-control employee-field" placeholder="eg. 000000000" required="required" /></li>
+								</ul>
+							</div>
+							<div class="form-group">
+								<ul class="proField-list">
+									<li><label>Email:</label></li>
+									<li><input type="text" id="prDes" name="prDes" class="form-control employee-des" placeholder="mail@mail.com" /></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="show-image">
+								<img id="holdImg" src="images/placeholder.png" class="img-responsive" alt="" />
+							</div>
+							<div class="getImage-box">
+								<input type="file" accept="image/x-png,image/gif,image/jpeg" name="prImage" id="prImage" />
+								<div class="getImg-status">	+ Upload Photo	</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<ul class="proField-list">
+								<li>&nbsp;</li>
+								<li><button id="addBtn" class="btn btn-success addBtn">Save Employee</button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="showemployee-table">
+						<table id="employeeTable" class="table table-responsive table-bordered">
+							<tr>
+								<th>Photo</th>
+								<th>Name</th>
+								<th>Id</th>
+								<th>Contact No</th>
+								<th>Email</th>	
+								<th>Edit</th>
+								<th>Delete</th>
+							</tr>
+						</table>
+						<button id="clearBtn" class="btn btn-danger">All Clear</button>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>  
+	
+	<script src="scripts/jquery-3.2.1.min.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/custom.js"></script>
+</body>
+</html>
